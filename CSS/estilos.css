@@ -1,3 +1,48 @@
 body{
     color: red;
 }
+
+/*--------------------MENU--------------------*/
+header {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	background: #96E6B3;
+	margin-bottom:20px;
+    font-family: helvetica;
+}
+ 
+.wrapper {
+	width:95%; /* Establecemos que el ancho sera del 90% */
+	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+}
+ 
+header .logo {
+	line-height:100px;
+	float:left;
+    margin-top: 4px;
+}
+ 
+header nav {
+	float:right;
+	line-height:200px;
+}
+ 
+header nav a {
+	display:inline-block;
+    color:#006D77;
+	text-decoration:none;
+	padding:5px 8px;
+	line-height:normal;
+	font-size:17px;
+	font-weight:bold;
+	-webkit-transition:all 400ms ease;
+	-o-transition:all 400ms ease;
+	transition:all 300ms ease;
+}
+ 
+header nav a:hover {
+	background:#EDF6F9;
+	border-radius:50px;
+}
