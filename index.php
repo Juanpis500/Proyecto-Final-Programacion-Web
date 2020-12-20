@@ -5,6 +5,9 @@
     <title>ISChop</title>
     <link rel="stylesheet" href="CSS/estilos.css">
     <script src="https://kit.fontawesome.com/62034752b0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
@@ -22,7 +25,7 @@
                     <li><a href="index.php"><i class="fas fa-home"></i></a></li>
                     <li><a href="#">Tienda</a></li>
                     <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li> 
                     <li><a href="#">Contáctanos</a></li>
                 </ul>
                 </div>
@@ -53,30 +56,36 @@
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </nav>
+         <div class="shake-horizontal">
+             Me meneo.
+         </div>
     </body>
     
     
     <footer>
         <nav class="pie">
             <div>
-                <h2>Acerca de ISChop</h2>
+                <h4>Acerca de ISChop</h4>
                 <a href="#">¿Quiénes somos?</a>
             </div>
             
             <div>
-                <h2>Servicio al cliente</h2>
+                <h4>Servicio al cliente</h4>
                 <a href="#">Preguntas Frecuentes</a><br>
                 <a href="#">Contáctanos</a>
             </div>
             
             <div>
-                <h2>Visítanos en redes sociales</h2>
+                <h4>Visítanos en redes sociales</h4>
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram-square"></i></a>
                 <a href="#"><i class="fab fa-twitter-square"></i></a>
             </div>
 
         </nav>
+        <div id="derechos">
+            <p>Todos los derechos resevados <i class="far fa-copyright"></i> 2020 ISChop utiliza cookies para almacenar los datos de la cuenta.</p>
+        </div>
     </footer>
     
     <script src="JavaScript/codigo.js"></script>

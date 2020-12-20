@@ -1,16 +1,26 @@
+Body{
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
 header{
-    padding: 25px;    
-    background-color: #FFDDD2;
+    padding: 5px;    
+    background-color: #49c6a7;
+    margin: -8px;
+    margin-bottom: 0;
+    -webkit-box-shadow: 0px 5px 9px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    0px 5px 9px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         0px 5px 9px 0px rgba(50, 50, 50, 0.25);
 }
 
 .carrito{
-    margin-top: 15px;
+    margin-top: 30px;
     margin-right: 50px;
     float: right;
 }
 
 .carrito a{
-    padding: 15px;
+    padding: 30px;
     text-decoration: none;
     color: black;
 }
@@ -24,7 +34,6 @@ header{
 
 .menu{
     width: 100%;
-    background-color: #FFDDD2;
     text-align: center;
 }
 
@@ -46,14 +55,6 @@ header{
 .menu ul li a{
     color: black;
     text-decoration: none;
-    font-family: helvetica;
-}
-
-
-body{
-    padding: 25px;
-    font-family: helvetica;
-    background-color: #FFDDD2;
 }
 
 
@@ -101,11 +102,14 @@ body{
 
 /*--------------------PIE DE PÁGINA--------------------*/
 footer{
-    padding: 25px;
-    background-color: #FFDDD2;
+    
 }
 .pie{
     display: flex;
+    background-color: #49c6a7;
+    padding: 25px 350px;
+    margin: -8px;
+    margin-top: 0;
 }
 
 .pie div{
@@ -116,4 +120,13 @@ footer{
 .pie div a{
     text-decoration: none;
     color: black;
+    font-size: 13px;
+}
+
+#derechos{
+    background-color: #358e78;
+    padding: 5px 650px;
+    margin: -8px;
+    margin-top: 0;
+    font-size: 12px;
 }
