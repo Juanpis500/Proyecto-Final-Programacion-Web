@@ -1,6 +1,7 @@
 Body{
     background-color: white;
     font-family: 'Quicksand', sans-serif;
+    padding: 20px;
 }
 
 header{
@@ -130,3 +131,26 @@ footer{
     margin-top: 0;
     font-size: 12px;
 }
+
+
+
+/*-------------------------PÁGINA ACERCA DE-------------------------*/
+/*--------------------PIE DE PÁGINA--------------------*/
+.vis-mis{
+    display: flex;
+    width: 100%;
+    text-align: justify;
+    justify-content: center;
+}
+
+.vis-mis div{
+    width: 40%;
+}
+
+
+
+
+
+
+
+

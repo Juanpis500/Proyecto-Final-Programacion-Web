@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ISChop</title>
+    <title>Acerca de</title>
     <link rel="stylesheet" href="CSS/estilos.css">
     <script src="https://kit.fontawesome.com/62034752b0.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
-    <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
@@ -24,7 +22,7 @@
                 <ul>
                     <li><a href="index.php"><i class="fas fa-home"></i></a></li>
                     <li><a href="#">Tienda</a></li>
-                    <li><a href="acercade.php">Acerca de</a></li>
+                    <li><a href="#">Acerca de</a></li>
                     <li><a href="#">Ayuda</a></li> 
                     <li><a href="#">Contáctanos</a></li>
                 </ul>
@@ -33,34 +31,39 @@
         </div>
     </header>
     
-    
     <body>
-        <!-------------------- CARRUSEL -------------------->
-        <nav>
-            <div class="slideshow-container">
-
-                <div class="mySlides fade">
-                    <img src="images/carrusel1.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="images/carrusel2.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="images/carrusel3.png" style="width:100%">
-                </div>
-
-              <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="vis-mis">
+            <div>
+                <h1>Misión</h1>
+                <p>Brindar el mejor servicio, los mejores productos hacia toda la sociedad, asegurando la calidad y satisfacción del cliente.</p>
             </div>
-        </nav>
-         <div class="shake-horizontal">
-             Me meneo.
-         </div>
+            <div><img src="images/mision.png" alt="Misión" width="400px"></div>
+        </div>
+        <hr>
+        <br><br>
+        
+        <div class="vis-mis">
+            <div>
+                <img src="images/vision.png" alt="Visión" width="400px">
+            </div>
+            <div>
+                <h2>Visión</h2>
+                <p>Ser una empresa sólida y preferente hacia la sociedad, brindando servicios y productos de calidad.</p>
+            </div>
+        </div>
+        <br><br>
+        <hr>
+        
+        <div class="vis-mis">
+            <div>
+               <br><br>
+                <p>Incursionar en las ventas on-line con un margen de éxito sostenible.</p>
+            </div>
+            <div>
+                <img src="images/objetivos.png" alt="Objetivos" width="350px">
+            </div>
+        </div>
     </body>
-    
     
     <footer>
         <nav class="pie">
@@ -87,7 +90,5 @@
             <p>Todos los derechos resevados <i class="far fa-copyright"></i> 2020 ISChop utiliza cookies para almacenar los datos de la cuenta.</p>
         </div>
     </footer>
-    
-    <script src="JavaScript/codigo.js"></script>
 </body>
 </html>
