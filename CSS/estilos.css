@@ -1,4 +1,4 @@
-Body{
+body{
     background-color: white;
     font-family: 'Quicksand', sans-serif;
     padding: 20px;
@@ -135,7 +135,7 @@ footer{
 
 
 /*-------------------------PÁGINA ACERCA DE-------------------------*/
-/*--------------------PIE DE PÁGINA--------------------*/
+
 .vis-mis{
     display: flex;
     width: 100%;
@@ -148,8 +148,30 @@ footer{
 }
 
 
+/*-------------------------PÁGINA CONTÁCTANOS-------------------------*/
+#navcont{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    
+}
 
+.cont{
+    padding: 25px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
 
+input{
+    width : 300px;
+    margin: 0;
+    font-size: 13px;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
 
 
 

@@ -26,15 +26,15 @@
                     <li><a href="#">Tienda</a></li>
                     <li><a href="acercade.php">Acerca de</a></li>
                     <li><a href="#">Ayuda</a></li> 
-                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="contacto.php">Contáctanos</a></li>
                 </ul>
                 </div>
             </nav>
         </div>
     </header>
+    <br><br>
     
-    
-    <body>
+
         <!-------------------- CARRUSEL -------------------->
         <nav>
             <div class="slideshow-container">
@@ -59,8 +59,8 @@
          <div class="shake-horizontal">
              Me meneo.
          </div>
-    </body>
-    
+
+    <br><br>
     
     <footer>
         <nav class="pie">
@@ -72,7 +72,7 @@
             <div>
                 <h4>Servicio al cliente</h4>
                 <a href="#">Preguntas Frecuentes</a><br>
-                <a href="#">Contáctanos</a>
+                <a href="contacto.php">Contáctanos</a>
             </div>
             
             <div>

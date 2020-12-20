@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Acerca de</title>
+    <title>Contáctanos</title>
     <link rel="stylesheet" href="CSS/estilos.css">
     <script src="https://kit.fontawesome.com/62034752b0.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
@@ -31,39 +31,31 @@
         </div>
     </header>
     
-
-        <div class="vis-mis">
-            <div>
-                <h1>Misión</h1>
-                <p>Brindar el mejor servicio, los mejores productos hacia toda la sociedad, asegurando la calidad y satisfacción del cliente.</p>
+    <nav id="navcont">
+        <h1 style="text-align:center; font-size:35px;">Contáctanos</h1>
+        <nav style=display:flex;>
+            <div class="cont">
+                <img src="images/contacto.png" alt="Contacto" width="350px">
             </div>
-            <div><img src="images/mision.png" alt="Misión" width="400px"></div>
-        </div>
-        <hr>
-        <br><br>
-        
-        <div class="vis-mis">
-            <div>
-                <img src="images/vision.png" alt="Visión" width="400px">
+            <div class="cont">
+                <form action="correo.php" method="post">
+                    <input type="text" name="nombre" placeholder="Nombre completo" required><br>
+                    <input type="text" name="email" placeholder="Email" required><br>
+                    <input type="password" name="secret" placeholder="Password" required><br>
+                    <input type="text" name="asunto" placeholder="Asunto"><br>
+                    <textarea name="mensaje" id="mensaje" cols="46" rows="7" style="font-family: 'Quicksand', sans-serif; font-size:13px;" placeholder="Mensaje"></textarea><br>
+                    <input type="submit">
+                </form>
+                
             </div>
-            <div>
-                <h1>Visión</h1>
-                <p>Ser una empresa sólida y preferente hacia la sociedad, brindando servicios y productos de calidad.</p>
+            <div class="cont">
+                <h1 style="font-size:25px;">O contáctanos por teléfono</h1>
+                <p>Llámanos al número 475 953 1506 <br><br>Nuestro horario de atención es: <br>Lunes a viernes de 9:00 a 16:00</p>
             </div>
-        </div>
-        <br><br>
-        <hr>
-        
-        <div class="vis-mis">
-            <div>
-               <br><br>
-                <p>Incursionar en las ventas on-line con un margen de éxito sostenible.</p>
-            </div>
-            <div>
-                <img src="images/objetivos.png" alt="Objetivos" width="350px">
-            </div>
-        </div>
- 
+        </nav>
+    </nav>
+    
+    
     
     <footer>
         <nav class="pie">
