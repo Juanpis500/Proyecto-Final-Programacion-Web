@@ -23,7 +23,7 @@
                     <li><a href="index.php"><i class="fas fa-home"></i></a></li>
                     <li><a href="#">Tienda</a></li>
                     <li><a href="acercade.php">Acerca de</a></li>
-                    <li><a href="#">Ayuda</a></li> 
+                    <li><a href="ayuda.php">Ayuda</a></li> 
                     <li><a href="contacto.php">Contáctanos</a></li>
                 </ul>
                 </div>
@@ -39,12 +39,12 @@
             </div>
             <div class="cont">
                 <form action="correo.php" method="post">
-                    <input type="text" name="nombre" placeholder="Nombre completo" required><br>
-                    <input type="text" name="email" placeholder="Email" required><br>
-                    <input type="password" name="secret" placeholder="Password" required><br>
-                    <input type="text" name="asunto" placeholder="Asunto"><br>
+                    <input type="text" name="nombre" placeholder="Nombre completo" required><br><br>
+                    <input type="text" name="email" placeholder="Email" required><br><br>
+                    <input type="password" name="secret" placeholder="Password" required><br><br>
+                    <input type="text" name="asunto" placeholder="Asunto"><br><br>
                     <textarea name="mensaje" id="mensaje" cols="46" rows="7" style="font-family: 'Quicksand', sans-serif; font-size:13px;" placeholder="Mensaje"></textarea><br>
-                    <input type="submit">
+                    <input type="submit" class="btn">
                 </form>
                 
             </div>
@@ -61,12 +61,12 @@
         <nav class="pie">
             <div>
                 <h4>Acerca de ISChop</h4>
-                <a href="#">¿Quiénes somos?</a>
+                <a href="acercade.php">¿Quiénes somos?</a>
             </div>
             
             <div>
                 <h4>Servicio al cliente</h4>
-                <a href="#">Preguntas Frecuentes</a><br>
+                <a href="ayuda.php">Preguntas Frecuentes</a><br>
                 <a href="contacto.php">Contáctanos</a>
             </div>
             

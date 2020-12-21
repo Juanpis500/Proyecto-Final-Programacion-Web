@@ -1,7 +1,7 @@
 body{
     background-color: white;
     font-family: 'Quicksand', sans-serif;
-    padding: 20px;
+    padding: 30px;
 }
 
 header{
@@ -102,14 +102,11 @@ header{
 
 
 /*--------------------PIE DE PÁGINA--------------------*/
-footer{
-    
-}
 .pie{
     display: flex;
     background-color: #49c6a7;
     padding: 25px 350px;
-    margin: -8px;
+    margin: 8px;
     margin-top: 0;
 }
 
@@ -125,9 +122,10 @@ footer{
 }
 
 #derechos{
+    text-align: center;
     background-color: #358e78;
-    padding: 5px 650px;
-    margin: -8px;
+    padding: 5px;
+    margin: 8px;
     margin-top: 0;
     font-size: 12px;
 }
@@ -163,16 +161,29 @@ footer{
     align-self: center;
 }
 
-input{
-    width : 300px;
-    margin: 0;
-    font-size: 13px;
-    -webkit-box-sizing: border-box; 
-    -moz-box-sizing: border-box; 
-    box-sizing: border-box;
+input, textarea{
+    padding: 10px;
+    border: none;
+    color: black;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
     font-family: 'Quicksand', sans-serif;
+    width: 270px;
 }
 
 
+.btn{
+    border: none;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(to right, #60d16d, #5ce2b9);
+    border-radius: 5px;
+    width: 255px;
+    margin: 8px;
+    margin-left: 20px;
+}
+
+.btn:hover{
+    color: #000000;
+}
 
 

@@ -23,7 +23,7 @@
                     <li><a href="index.php"><i class="fas fa-home"></i></a></li>
                     <li><a href="#">Tienda</a></li>
                     <li><a href="acercade.php">Acerca de</a></li>
-                    <li><a href="#">Ayuda</a></li> 
+                    <li><a href="ayuda.php">Ayuda</a></li> 
                     <li><a href="contacto.php">Contáctanos</a></li>
                 </ul>
                 </div>
@@ -31,7 +31,7 @@
         </div>
     </header>
     
-
+<br><br>
         <div class="vis-mis">
             <div>
                 <h1>Misión</h1>
@@ -56,7 +56,7 @@
         
         <div class="vis-mis">
             <div>
-               <br><br>
+                <h1>Objetivo</h1>
                 <p>Incursionar en las ventas on-line con un margen de éxito sostenible.</p>
             </div>
             <div>
@@ -64,17 +64,17 @@
             </div>
         </div>
  
-    
+    <br><br>
     <footer>
         <nav class="pie">
             <div>
                 <h4>Acerca de ISChop</h4>
-                <a href="#">¿Quiénes somos?</a>
+                <a href="acercade.php">¿Quiénes somos?</a>
             </div>
             
             <div>
                 <h4>Servicio al cliente</h4>
-                <a href="#">Preguntas Frecuentes</a><br>
+                <a href="ayuda.php">Preguntas Frecuentes</a><br>
                 <a href="contacto.php">Contáctanos</a>
             </div>
             
