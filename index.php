@@ -15,7 +15,7 @@
         <div>
            <nav class="carrito">
                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-               <a href="#">Login</a>
+               <a href="pag_admin_1.php">Login</a>
            </nav>
            <br><br>
            
