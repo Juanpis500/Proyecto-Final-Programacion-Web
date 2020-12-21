@@ -12,9 +12,57 @@
 
 #sec2_admin{
     margin: 10px 30px;
-    background-color: aliceblue;
+    padding: 5px 25px;
+    border-radius: 5px;
+    width: 550px;
+    -webkit-box-shadow: 0px 5px 9px 0px rgba(50, 50, 50, 0.35);
+    -moz-box-shadow:    0px 5px 9px 0px rgba(50, 50, 50, 0.35);
+    box-shadow:         0px 5px 9px 0px rgba(50, 50, 50, 0.35);
+}
+
+#sec2_admin input{
+    padding: 15px;
+    border: none;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.31);
 }
 
 #Menus_admin ul li {
+    list-style: none;
+    padding: 3px;
+}
+
+#Menus_admin ul li a{
     text-decoration: none;
+    color: black;
+    
+}
+
+#opcion:hover{
+    background-color: #bfbfbf;
+    border-radius: 5px;
+}
+
+#btn_nproductos{
+    background: linear-gradient(to bottom, #49c6a7, #49c65c);
+    margin: 15px;
+    margin-left: 200px;
+    color: white;
+    font-weight: bold;
+}
+
+/***************Pagina 2******************/
+
+#sec2_admin_2{
+    margin: 10px 30px;
+    padding: 5px 25px;
+    border-radius: 5px;
+    width: 750px;
+    -webkit-box-shadow: 0px 5px 9px 0px rgba(50, 50, 50, 0.35);
+    -moz-box-shadow:    0px 5px 9px 0px rgba(50, 50, 50, 0.35);
+    box-shadow:         0px 5px 9px 0px rgba(50, 50, 50, 0.35);
+}
+
+th{
+    padding: 2px 15px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.21);
 }

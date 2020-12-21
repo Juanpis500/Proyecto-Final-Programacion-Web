@@ -34,29 +34,27 @@
             <div id="Menus_admin">
                 <ul>
                     <li><h3>Configuracion</h3></li>
-                    <li id="opcion" style="padding:10px; background-color: #bfbfbf; border-radius: 5px"><a href="pag_admin_1.php">Agregar Nuevos productos</a></li>
-                    <li id="opcion" style="padding:10px"><a href="pag_admin_2.php">Administrar productos existentes</a></li>
+                    <li id="opcion" style="padding:10px"><a href="pag_admin_1.php">Agregar Nuevos productos</a></li>
+                    <li id="opcion" style="padding:10px; background-color: #bfbfbf; border-radius: 5px"><a href="pag_admin_2.php">Administrar productos existentes</a></li>
                     <li id="opcion" style="padding:10px"><a href="pag_admin_3.php">Estadisticas de la pagina</a></li>
                 </ul>
             </div>
-            <div id="sec2_admin">
-                <p style="font-size: 20px">Agregar nuevos productos:</p><hr>
+            <div id="sec2_admin_2">
+                <p style="font-size: 20px">Listado de Productos:</p><hr><br>
                 <div>
-                    <form action="">
-                        <label for="ide">Inserte el ID:</label>
-                        <input type="number" id="ide" name="ide" required style="margin-left: 100px"><br><br>
-                        <label for="">Nombre producto:</label>
-                        <input type="text" required style="margin-left: 55px"><br><br>
-                        <label for="imag">Inserte la imagen:</label>
-                        <input type="file" id="imag" name="imag" required style="margin-left: 58px; border-bottom: none;"><br><br>
-                        <label for="">Precio:</label>
-                        <input type="number" min="0" required style="margin-left: 143px"><br><br>
-                        <label for="">Categoria:</label>
-                        <input type="text" style="margin-left: 115px" required><br><br>
-                        <label for="">Descripcion:</label>
-                        <input type="text" width="100%" height="100%" style="margin-left: 102px">
-                        <input type="submit" value="Crear" id="btn_nproductos">
-                    </form>
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre del Producto</th>
+                            <th>Imagen del producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Descripcion</th>
+                        </tr>
+                        <?php
+                            //aqui va la parte de la base de datos :0
+                        ?>
+                    </table>
                 </div>
             </div>
         </div>

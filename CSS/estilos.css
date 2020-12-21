@@ -101,9 +101,6 @@ header{
 
 
 /*--------------------PIE DE PÁGINA--------------------*/
-footer{
-    
-}
 .pie{
     display: flex;
     background-color: #49c6a7;
@@ -124,8 +121,9 @@ footer{
 }
 
 #derechos{
+    text-align: center;
     background-color: #358e78;
-    padding: 5px 650px;
+    padding: 5px;
     margin: -8px;
     margin-top: 0;
     font-size: 12px;
