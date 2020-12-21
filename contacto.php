@@ -23,7 +23,7 @@
                     <li><a href="index.php"><i class="fas fa-home"></i></a></li>
                     <li><a href="#">Tienda</a></li>
                     <li><a href="acercade.php">Acerca de</a></li>
-                    <li><a href="#">Ayuda</a></li> 
+                    <li><a href="ayuda.php">Ayuda</a></li> 
                     <li><a href="contacto.php">Contáctanos</a></li>
                 </ul>
                 </div>
@@ -61,12 +61,12 @@
         <nav class="pie">
             <div>
                 <h4>Acerca de ISChop</h4>
-                <a href="#">¿Quiénes somos?</a>
+                <a href="acercade.php">¿Quiénes somos?</a>
             </div>
             
             <div>
                 <h4>Servicio al cliente</h4>
-                <a href="#">Preguntas Frecuentes</a><br>
+                <a href="ayuda.php">Preguntas Frecuentes</a><br>
                 <a href="contacto.php">Contáctanos</a>
             </div>
             

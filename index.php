@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>ISChop</title>
     <link rel="stylesheet" href="CSS/estilos.css">
     <script src="https://kit.fontawesome.com/62034752b0.js" crossorigin="anonymous"></script>
@@ -25,7 +26,7 @@
                     <li><a href="index.php"><i class="fas fa-home"></i></a></li>
                     <li><a href="#">Tienda</a></li>
                     <li><a href="acercade.php">Acerca de</a></li>
-                    <li><a href="#">Ayuda</a></li> 
+                    <li><a href="ayuda.php">Ayuda</a></li> 
                     <li><a href="contacto.php">Contáctanos</a></li>
                 </ul>
                 </div>
@@ -71,7 +72,7 @@
             
             <div>
                 <h4>Servicio al cliente</h4>
-                <a href="#">Preguntas Frecuentes</a><br>
+                <a href="ayuda.php">Preguntas Frecuentes</a><br>
                 <a href="contacto.php">Contáctanos</a>
             </div>
             
