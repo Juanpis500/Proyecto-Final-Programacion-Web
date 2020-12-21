@@ -72,7 +72,7 @@
             
             <div>
                 <h4>Visítanos en redes sociales</h4>
-                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/ISChop-101255348559329" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram-square"></i></a>
                 <a href="#"><i class="fab fa-twitter-square"></i></a>
             </div>
