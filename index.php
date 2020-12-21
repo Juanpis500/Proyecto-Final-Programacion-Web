@@ -62,7 +62,15 @@
          </div>
 
     <br><br>
-    
+    <hr>
+    <div class="suscrip">
+       <h2>Suscríbete a nuestra tienda y <br>recibe noticias de nuestros productos</h2>
+        <form action="suscripcion.php" method="post">
+                <input type="text" name="email" placeholder="Email" required><br><br>
+                <input type="submit" class="btn">
+        </form>
+    </div>
+    <br><br>
     <footer>
         <nav class="pie">
             <div>
