@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>ISChop</title>
     <link rel="stylesheet" href="CSS/estilos.css">
     <script src="https://kit.fontawesome.com/62034752b0.js" crossorigin="anonymous"></script>
