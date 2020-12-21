@@ -1,0 +1,29 @@
+.centrar-faq{
+    align-content: center;
+    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+details{
+  border: 1px solid #84DCC6;
+  padding: 15px;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #EEE;
+}
+summary{
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+section p{
+    margin-left: 20px;
+    font-size: 15px;
+    color: #666;
+}
+
+details summary::-webkit-details-marker {
+  color: #84DCC6;
+}
