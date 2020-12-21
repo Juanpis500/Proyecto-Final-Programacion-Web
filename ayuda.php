@@ -80,7 +80,11 @@
         <nav class="pie">
             <div>
                 <h4>Acerca de ISChop</h4>
+<<<<<<< HEAD
+                <a href="acercade.php">¿Quiénes somos?</a>
+=======
                 <a href="#">¿Quiénes somos?</a>
+>>>>>>> ce85fdd255672456b035c711abca759617a96389
             </div>
             
             <div>
