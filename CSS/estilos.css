@@ -1,7 +1,6 @@
 body{
     background-color: white;
     font-family: 'Quicksand', sans-serif;
-    padding: 20px;
 }
 
 header{
@@ -50,7 +49,7 @@ header{
 
 .menu ul li:hover, .carrito a:hover{
     transform: scale(1.2);
-    background: #E29578;
+    background: #3ca289;
 }
 
 .menu ul li a{

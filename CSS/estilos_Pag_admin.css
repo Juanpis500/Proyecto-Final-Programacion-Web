@@ -1,0 +1,20 @@
+#sec_admin{
+    padding: 20px 300px;
+}
+
+#Menus_admin {
+    width: auto;
+}
+
+#config_admin{
+    display: flex;
+}
+
+#sec2_admin{
+    margin: 10px 30px;
+    background-color: aliceblue;
+}
+
+#Menus_admin ul li {
+    text-decoration: none;
+}
