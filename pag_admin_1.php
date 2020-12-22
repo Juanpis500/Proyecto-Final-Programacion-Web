@@ -63,11 +63,11 @@
                              require 'vendor/autoload.php';
                               $categoria = new ischop\Categoria;
                               $info_categoria = $categoria->mostrar();
-                              $cantidad = count($info_categoria);
+                              $cantidad = count($info_categoria); //Almacena todas las categorias
                                 for($x =0; $x< $cantidad;$x++){
-                                  $item = $info_categoria[$x];
+                                  $item = $info_categoria[$x];//Se lee cada posicion del arreglo con la variable x
                               ?>
-                                <option value="<?php print $item['id'] ?>"><?php print $item['Nombre'] ?></option>
+                                <option value="<?php print $item['id'] ?>"><?php print $item['nombre'] ?></option>
                               <?php
 
                                 }
@@ -76,6 +76,8 @@
                         <br><br>	
                         <label for="">Descripcion:</label>
                         <input type="text" width="100%" height="100%" style="margin-left: 102px" name="Descripcion">
+                         <label for="">Inventario:</label>
+                         <input type="number" width="100%" height="100%" style="margin-left: 102px" name="CantidadTotal">
                         <input type="submit"  id="btn_nproductos" name="accion" value="Crear">
                     </form>
                 </div>

@@ -25,7 +25,10 @@
             exit('Seleccionar una Categoria válida');
 		
 		if(empty($_POST['Descripcion']))
-            exit('Descripcion');
+            exit('Completar Descripcion');
+		
+		if(empty($_POST['CantidadTotal']))
+            exit('Completar CantidadTotal');
 		
       
       
@@ -36,6 +39,7 @@
 			'Imagen'=> subirImagen(),
             'Precio'=>$_POST['Precio'],
 			'Descripcion'=>$_POST['Descripcion'],
+			'CantidadTotal'=>$_POST['CantidadTotal'],
            
            
             
@@ -71,7 +75,10 @@
             exit('Seleccionar una Categoria válida');
 		
 		if(empty($_POST['Descripcion']))
-            exit('Descripcion');
+            exit('Completar CDescripcion');
+			
+		if(empty($_POST['CantidadTotal']))
+            exit('Completar Inventario');
 		
       
       
@@ -81,16 +88,18 @@
 			'categoria_id'=>$_POST['categoria_id'],
             'Precio'=>$_POST['Precio'],
 			'Descripcion'=>$_POST['Descripcion'],
+			'CantidadTotal'=>$_POST['CantidadTotal'],
 			'id'=>$_POST['id'],
            
           );  //Validación si la Imagen no esta vacia, se carga el valor que tenia
-			if(!empty($_POST['Imagen_temp']))
-				$_params['Imagen'] =$_POST['Imagen_temp'];
-										   
-			//Si no tiene imagen se carga una nueva
-			if(!empty($_FILES['Imagen']['name']))
-				$_params['Imagen'] =subirImagen();
-		
+           if(!empty($_POST['Imagen_temp']))
+              $_params['Imagen'] = $_POST['Imagen_temp'];
+    
+          if(!empty($_FILES['Imagen']['name']))
+             $_params['Imagen'] = subirImagen();
+
+			
+			
 
 
 
@@ -133,8 +142,9 @@ if($_SERVER['REQUEST_METHOD'] ==='GET'){
 		
 		
 		function subirImagen() {
+			//Revisar ruta de upload
 
-                   $carpeta = __DIR__.'upload/'; //ruta de uploadaiuda aaqui
+                   $carpeta = __DIR__.'../upload/'; //ruta de uploadaiuda aaqui
 
                    $archivo = $carpeta.$_FILES['Imagen']['name'];
 

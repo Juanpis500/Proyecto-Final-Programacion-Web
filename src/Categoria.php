@@ -6,6 +6,10 @@ class Categoria{
 
     private $config;
     private $cn = null;
+	
+	
+	
+	//Conexion con la bd
 
     public function __construct(){
 
