@@ -151,7 +151,7 @@ header{
     display: flex;
     background-color: #49c6a7;
     padding: 25px 350px;
-    margin: 8px;
+    margin: -8px;
     margin-top: 0;
 }
 
@@ -170,11 +170,7 @@ header{
     text-align: center;
     background-color: #358e78;
     padding: 5px;
-<<<<<<< HEAD
-    margin: 8px;
-=======
     margin: -8px;
->>>>>>> 18cf1b6ba264fe13e1e5daae51ac28a6cb5fa843
     margin-top: 0;
     font-size: 12px;
 }
