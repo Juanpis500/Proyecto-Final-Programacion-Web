@@ -42,20 +42,34 @@
             <div id="sec2_admin">
                 <p style="font-size: 20px">Agregar nuevos productos:</p><hr>
                 <div>
-                    <form action="">
-                        <label for="ide">Inserte el ID:</label>
-                        <input type="number" id="ide" name="ide" required style="margin-left: 100px"><br><br>
+                    <form action="acciones.php" enctype="multipart/form-data" method="post">
                         <label for="">Nombre producto:</label>
-                        <input type="text" required style="margin-left: 55px"><br><br>
+                        <input type="text" required style="margin-left: 55px" name="Nombre_Prod"><br><br>
                         <label for="imag">Inserte la imagen:</label>
-                        <input type="file" id="imag" name="imag" required style="margin-left: 58px; border-bottom: none;"><br><br>
+                        <input type="file" id="imag" name="Imagen" required style="margin-left: 58px; border-bottom: none;"><br><br>
                         <label for="">Precio:</label>
-                        <input type="number" min="0" required style="margin-left: 143px"><br><br>
+                        <input type="text" min="0" required style="margin-left: 143px" name="Precio"><br><br>
                         <label for="">Categoria:</label>
-                        <input type="text" style="margin-left: 115px" required><br><br>
+                        <select name="categoria_id" style="margin-left: 115px" required>
+                         <option value="">--SELECCIONE--</option>
+                            <?php
+                             require 'vendor/autoload.php';
+                              $categoria = new ischop\Categoria;
+                              $info_categoria = $categoria->mostrar();
+                              $cantidad = count($info_categoria);
+                                for($x =0; $x< $cantidad;$x++){
+                                  $item = $info_categoria[$x];
+                              ?>
+                                <option value="<?php print $item['id'] ?>"><?php print $item['Nombre'] ?></option>
+                              <?php
+
+                                }
+                              ?>
+                        </select>
+                        <br><br>	
                         <label for="">Descripcion:</label>
-                        <input type="text" width="100%" height="100%" style="margin-left: 102px">
-                        <input type="submit" value="Crear" id="btn_nproductos">
+                        <input type="text" width="100%" height="100%" style="margin-left: 102px" name="Descripcion">
+                        <input type="submit"  id="btn_nproductos" name="accion" value="Crear">
                     </form>
                 </div>
             </div>

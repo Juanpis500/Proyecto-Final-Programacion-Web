@@ -1,0 +1,32 @@
+{
+    "name": "ischop/tienda-online",
+    "description": "creacion de una tienda online",
+    "type": "project",
+    "license": "MIT", 
+    "authors": [ 
+        {
+            "name": "Juan Pablo"
+          
+        },
+        {
+            "name": "Abigail"
+           
+        },
+		{
+            "name": "Josué"
+           
+        },
+		{
+            "name": "Veronica"
+           
+        }
+    ],
+    "require": {
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "ischop\\":"src/" 
+        }
+    }
+}
