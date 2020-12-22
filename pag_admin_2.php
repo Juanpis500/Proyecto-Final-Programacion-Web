@@ -14,71 +14,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-	<header>
-		<div>
-			<nav class="carrito">
-				<a href="#">Login</a>
-			</nav>
-			<br><br>
-			<!-------------------- MENU -------------------->
-			<nav class="menu">
-				<div class="contenedor">
-					<ul>
-						<li><a href="index.php"><i class="fas fa-home"></i></a></li>
-						<li><a href="#">Tienda</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-	</header>
-	<section id="sec_admin">
-		<div id="config_admin">
-			<div id="Menus_admin">
-				<ul>
-					<li>
-						<h3>Configuracion</h3>
-					</li>
-					<li id="opcion" style="padding:10px"><a href="pag_admin_1.php">Agregar Nuevos productos</a></li>
-					<li id="opcion" style="padding:10px; background-color: #bfbfbf; border-radius: 5px"><a href="pag_admin_2.php">Administrar productos existentes</a></li>
-					<li id="opcion" style="padding:10px"><a href="pag_admin_3.php">Estadisticas de la pagina</a></li>
-				</ul>
-			</div>
-			<div id="sec2_admin_2">
-				<p style="font-size: 20px">Listado de Productos:</p>
-				<hr><br>
-				<div>
-					<table>
-						<tr>
-							<th>ID#</th>
-							<th>Nombre del Producto</th>
-							<th>Categoria</th>
-							<th>Imagen del producto</th>
-							<th>Precio</th>
-							<th>Descripcion</th>
-						</tr>
-						
-						<?php
-                              require 'vendor/autoload.php';
-                              $producto = new ischop\Producto;
-                              $info_producto = $producto->mostrar();
-
-                    
-                              $cantidad = count($info_producto);
-                              if($cantidad > 0){
-                                $c=0;
-                                 for($x =0; $x < $cantidad; $x++){
-									  $c++;
-                                      $item = $info_producto[$x];
-                                    
-                    ?>
-
-					<tr>
-                      <td><?php print $c?></td>
-                      <td><?php print $item['Nombre_Prod']?></td>
-                       <td><?php print $item['categoria_id']?></td>
-                       <td class="text-center">
-=======
     <header>
         <div>
            <nav class="carrito">
@@ -120,27 +55,56 @@
                         <tr>
                             <th>ID</th>
                             <th>Nombre del Producto</th>
-                            <th>Imagen del producto</th>
-                            <th>Precio</th>
+                            <th>Categoria</th>
+                            <th>Imagen</th>
                             <th>Cantidad</th>
+                            <th>Precio</th>
                             <th>Descripcion</th>
+                            <th>Accion</th>
                         </tr>
->>>>>>> 69025837791f9d536e6d4f70a85fcc69a4a57012
+                        <?php
+                              require 'vendor/autoload.php';
+                              $producto = new ischop\Producto;
+                              $info_producto = $producto->mostrar();
+
+                    
+                              $cantidad = count($info_producto);
+                              if($cantidad > 0){
+                                $c=0;
+                                 for($x =0; $x < $cantidad; $x++){
+									  $c++;
+                                      $item = $info_producto[$x];
+                                    
+                        ?>
+
+					<tr>
+                      <td><?php print $c?></td>
+                      <td><?php print $item['Nombre_Prod']?></td>
+                       <td><?php
+                            if($item['categoria_id']=='1'){
+                                echo "Tecnologia";
+                            }
+                            else{
+                                echo "Comida";
+                            }
+                           ?>
+                        </td>
+                       <td class="text-center">
                         <?php
                           $Imagen = 'upload'.$item['Imagen'];
                           if(file_exists($Imagen)){
                         ?>
                           <img src="<?php print $Imagen; ?>" width="70">
-                      <?php }else{?>
-                          SIN Imagen
-                      <?php }?>
+                          <?php }else{?>
+                              SIN Imagen
+                          <?php }?>
                       </td>
                       <td><?php print $item['Precio']?></td>
                      
                       <td><?php print $item['Descripcion']?></td>
                      
                       <td class="text-center">
-                        <a href="acciones.php?id=<?php print $item['id']?>" class="btn btn-danger btn-sm" >Eliminar</a>
+                        <a href="acciones.php?id=<?php print $item['id']?>" class="btn btn-danger btn-sm" >Eliminar</a><br>
                         <a href="pag_admin_4.php?id=<?php print $item['id']  ?>" class="btn btn-success btn-sm">Modificar</a>
                       </td>
                     

@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
     <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
     <link rel="stylesheet" href="CSS/estilos_Pag_admin.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 <body>
     <header>
@@ -49,7 +50,7 @@
             <div id="sec2_admin">
                 <p style="font-size: 20px">Estadisticas de la pagina:</p><hr>
                 <div>
-            
+                    <canvas id="myChart" width="300" height="300"></canvas>
                 </div>
             </div>
         </div>
@@ -60,5 +61,32 @@
             <p>Todos los derechos resevados <i class="far fa-copyright"></i> 2020 ISChop utiliza cookies para almacenar los datos de la cuenta.</p>
         </div>
     </footer>
+    <script>
+        var ctx= document.getElementById("myChart").getContext("2d");
+        var myChart= new Chart(ctx,{
+            type:"pie",
+            data: {
+                labels:['col1','col2','col3'],
+                datasets:[{
+                    label:'Num datos',
+                    data:[10,9,15],
+                    backgroundColor:[
+                        'rgb(255,179,102)',
+                        'rgb(0,230,0)',
+                        'rgb(179,102,255)'
+                    ]
+                }]
+            },
+            options:{
+                scales:{
+                    yAxes:[{
+                        ticks:{
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
 </body>
 </html>
