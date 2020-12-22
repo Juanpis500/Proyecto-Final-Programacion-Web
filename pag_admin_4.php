@@ -33,9 +33,10 @@
                        <input type="hidden" name="id" value="<?php print $resultado['id'] ?>">
                         <label for="">Nombre producto:</label>
                         <input type="text" required style="margin-left: 55px" name="Nombre_Prod" value="<?php print $resultado['Nombre_Prod'] ?>"><br><br>
-                        <label for="imag">Inserte la imagen:</label>
+                        <label for="imag">Imagen:</label>
                         <input type="file" id="imag" name="Imagen" required style="margin-left: 58px; border-bottom: none;">
-                         <input type="hidden" name="foto_temp" value="<?php print $resultado['Imagen']?>">
+                         <input type="hidden" name="Imagen_temp" value="<?php print $resultado['Imagen']?>">
+                       
                         <br><br>
                         <label for="">Precio:</label>
                         <input type="text" min="0" required style="margin-left: 143px" name="Precio" value="<?php print $resultado['Precio'] ?>"><br><br>
@@ -63,6 +64,8 @@
                         <br><br>	
                         <label for="">Descripcion:</label>
                         <input type="text" width="100%" height="100%" style="margin-left: 102px" name="Descripcion" value="<?php print $resultado['Descripcion'] ?>">
+                         <label for="">Cantidad Total:</label>
+                        <input type="number" width="100%" height="100%" style="margin-left: 102px" name="CantidadTotal" value="<?php print $resultado['CantidadTotal'] ?>">
                         <input type="submit" value="Actualizar" id="btn_nproductos" name="accion">
                     </form>
                 </div>

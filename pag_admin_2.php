@@ -57,41 +57,36 @@
                             <th>Nombre del Producto</th>
                             <th>Categoria</th>
                             <th>Imagen</th>
-                            <th>Cantidad</th>
                             <th>Precio</th>
                             <th>Descripcion</th>
+                            <th>Inventario</th>
                             <th>Accion</th>
                         </tr>
                         <?php
                               require 'vendor/autoload.php';
                               $producto = new ischop\Producto;
-                              $info_producto = $producto->mostrar();
+                              $info_producto = $producto->mostrar();//Se encarga de mostrar la lista de las peliculas
 
                     
-                              $cantidad = count($info_producto);
-                              if($cantidad > 0){
+                              $cantidad = count($info_producto);//Saber cuantos registros existen en la bd
+                              if($cantidad > 0){ //Si existen 
                                 $c=0;
                                  for($x =0; $x < $cantidad; $x++){
 									  $c++;
-                                      $item = $info_producto[$x];
+                                      $item = $info_producto[$x];//va a recorrer cada arreglo
                                     
                         ?>
 
 					<tr>
                       <td><?php print $c?></td>
                       <td><?php print $item['Nombre_Prod']?></td>
-                       <td><?php
-                            if($item['categoria_id']=='1'){
-                                echo "Tecnologia";
-                            }
-                            else{
-                                echo "Comida";
-                            }
-                           ?>
-                        </td>
+                      <td><?php print $item['Nombre']?></td>
+
+                      
+                        
                        <td class="text-center">
                         <?php
-                          $Imagen = 'upload'.$item['Imagen'];
+                          $Imagen = 'upload/'.$item['Imagen'];
                           if(file_exists($Imagen)){
                         ?>
                           <img src="<?php print $Imagen; ?>" width="70">
@@ -102,6 +97,8 @@
                       <td><?php print $item['Precio']?></td>
                      
                       <td><?php print $item['Descripcion']?></td>
+                      
+                      <td><?php print $item['CantidadTotal']?></td>
                      
                       <td class="text-center">
                         <a href="acciones.php?id=<?php print $item['id']?>" class="btn btn-danger btn-sm" >Eliminar</a><br>
