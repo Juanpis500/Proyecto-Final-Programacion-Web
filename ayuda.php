@@ -26,8 +26,15 @@
             <nav  class="menu">
                <div class="contenedor">
                 <ul>
+                    <img src="images/logob.png" alt="" width="130px">
                     <li><a href="index.php"><i class="fas fa-home"></i></a></li>
-                    <li><a href="#">Tienda</a></li>
+                        <div class="dropdown">
+                          <button class="dropbtn">Categorias <i class="fas fa-caret-down"></i></button>
+                          <div class="dropdown-content">
+                            <a href="pag_tec.php">Tecnologia <i class="fas fa-microchip"></i></a>
+                            <a href="pag_comi.php">Comida <i class="fas fa-utensils"></i></a>
+                          </div>
+                        </div>
                     <li><a href="acercade.php">Acerca de</a></li>
                     <li><a href="ayuda.php">Ayuda</a></li> 
                     <li><a href="contacto.php">Contáctanos</a></li>
@@ -37,45 +44,47 @@
         </div>
     </header>
     <br><br>
-    
-    <img src="images/FAQ.png" alt="Preguntas Frecuentes" width="900px" class="centrar-faq">
-    
-    <br><br>
-    <details>
-        <summary>Después de hacer mi compra, ¿en cuántos días recibiré mi pedido?</summary>
-        <p>Depende de tu lugar de residencia, el pedido tardará en llegar de 3 a 7 días hábiles.</p>
-    </details>
-    <br>
-    
-    <details>
-        <summary>Tengo un cupón de descuento, ¿cómo lo aplico?</summary>
-        <p>Si cuentas con un código de descuento por alguna promoción, debes ingresarlo en la página de carrito de compra en la opción "Aplicar código de descuento". </p>
-    </details>
-    <br>
-    
-    <details>
-        <summary>¿Cuáles son los métodos de pago?</summary>
-        <p>En ISChop manejamos dos maneras de pago: por medio de <strong>tarjeta</strong> (de crédito y débito) y haciendo uso del servicio de <strong>Oxxo Pay</strong>.</p>
-    </details>
-    <br>
-    
-    <details>
-        <summary>¿Cómo puedo pagar con tarjeta de crédito o débito?</summary>
-        <p>Pasos: <br> 1.- Elije Tarjeta como método de pago. <br>2.- Llena los datos  que se te piden y realiza el pago <br>
-        3.-Espera en tu correo una verifiación de pago. </p>
-    </details>
-    <br>
-    
-    <details>
-        <summary>¿Cómo pagar en Oxxo?</summary>
-        <p>Este método de pago es <strong>únicamente en efectivo</strong> y a través de tiendas Oxxo, toma en cuenta que el total de tu compra <strong>no debe rebasar los $10,000MXN.</strong></p>
-        <p>1.- Elige <strong>Oxxo</strong> como método de pago. <br>2.- Recibe la confirmación de tu pedido y una clave única para realizar el pago en la sucursal Oxxo. <br>3.- Visita el Oxxo y dile al cajero que <strong>deseas realizar un pago de Oxxo pay</strong>. <br>
-        4.- Dictale la <strong>referencia de pago</strong> que recibiste anteriormente. <br>5.- Espera en tu correo una verificación de pago.</p>
-    </details>
-    
-    <br><br>
-    <h3>Si tu pregunta no ha sido agregada a esta sección, recuerda que siempre puedes contactarnos para aclarar tus dudas sobre los servicios y productos que te ofrecemos en el apartado <a href="contacto.php">Contáctanos</a>.</h3>
-    <br><br>
+    <section class="sec_ayuda">
+        <img src="images/FAQ.png" alt="Preguntas Frecuentes" width="900px" class="centrar-faq">
+
+        <br><br>
+        <details>
+            <summary>Después de hacer mi compra, ¿en cuántos días recibiré mi pedido?</summary>
+            <p>Depende de tu lugar de residencia, el pedido tardará en llegar de 3 a 7 días hábiles.</p>
+        </details>
+        <br>
+
+        <details>
+            <summary>Tengo un cupón de descuento, ¿cómo lo aplico?</summary>
+            <p>Si cuentas con un código de descuento por alguna promoción, debes ingresarlo en la página de carrito de compra en la opción "Aplicar código de descuento". </p>
+        </details>
+        <br>
+
+        <details>
+            <summary>¿Cuáles son los métodos de pago?</summary>
+            <p>En ISChop manejamos dos maneras de pago: por medio de <strong>tarjeta</strong> (de crédito y débito) y haciendo uso del servicio de <strong>Oxxo Pay</strong>.</p>
+        </details>
+        <br>
+
+        <details>
+            <summary>¿Cómo puedo pagar con tarjeta de crédito o débito?</summary>
+            <p>Pasos: <br> 1.- Elije Tarjeta como método de pago. <br>2.- Llena los datos  que se te piden y realiza el pago <br>
+            3.-Espera en tu correo una verifiación de pago. </p>
+        </details>
+        <br>
+
+        <details>
+            <summary>¿Cómo pagar en Oxxo?</summary>
+            <p>Este método de pago es <strong>únicamente en efectivo</strong> y a través de tiendas Oxxo, toma en cuenta que el total de tu compra <strong>no debe rebasar los $10,000MXN.</strong></p>
+            <p>1.- Elige <strong>Oxxo</strong> como método de pago. <br>2.- Recibe la confirmación de tu pedido y una clave única para realizar el pago en la sucursal Oxxo. <br>3.- Visita el Oxxo y dile al cajero que <strong>deseas realizar un pago de Oxxo pay</strong>. <br>
+            4.- Dictale la <strong>referencia de pago</strong> que recibiste anteriormente. <br>5.- Espera en tu correo una verificación de pago.</p>
+        </details>
+
+        <br><br>
+        <h3>Si tu pregunta no ha sido agregada a esta sección, recuerda que siempre puedes contactarnos para aclarar tus dudas sobre los servicios y productos que te ofrecemos en el apartado <a href="contacto.php">Contáctanos</a>.</h3>
+        <br><br>
+        
+    </section>
     <footer>
         <nav class="pie">
             <div>

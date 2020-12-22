@@ -27,3 +27,8 @@ section p{
 details summary::-webkit-details-marker {
   color: #84DCC6;
 }
+
+.sec_ayuda{
+    padding: 10px 50px;
+    margin: 0px 350px; 
+}

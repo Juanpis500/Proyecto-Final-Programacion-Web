@@ -20,8 +20,15 @@
             <nav  class="menu">
                <div class="contenedor">
                 <ul>
+                    <img src="images/logob.png" alt="" width="130px">
                     <li><a href="index.php"><i class="fas fa-home"></i></a></li>
-                    <li><a href="#">Tienda</a></li>
+                        <div class="dropdown">
+                          <button class="dropbtn">Categorias <i class="fas fa-caret-down"></i></button>
+                          <div class="dropdown-content">
+                            <a href="pag_tec.php">Tecnologia <i class="fas fa-microchip"></i></a>
+                            <a href="pag_comi.php">Comida <i class="fas fa-utensils"></i></a>
+                          </div>
+                        </div>
                     <li><a href="acercade.php">Acerca de</a></li>
                     <li><a href="ayuda.php">Ayuda</a></li>
                     <li><a href="contacto.php">Contáctanos</a></li>

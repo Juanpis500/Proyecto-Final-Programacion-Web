@@ -28,8 +28,8 @@ header{
 .suscrip{
     align-self: center;
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
+    padding-top: 100px;
+    color: white;
 }
 
 
@@ -107,9 +107,8 @@ header{
 /*--------------------CARRUSEL--------------------*/
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin: 0px -8px;
 }
 
 /* Hide the images by default */
@@ -145,6 +144,42 @@ header{
 }
 
 
+/*--------Continuacion----------------*/
+
+.pag_prin2{
+    background-color: #ffffff;
+    margin: 0px -8px;
+    padding: 30px 100px; 
+}
+
+.Categorias_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 300px;
+    
+}
+
+.pag_prin2 img{ 
+    -webkit-box-shadow: 7px 7px 0px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    7px 7px 0px 0px rgba(50, 50, 50, 1);
+    box-shadow:         7px 7px 0px 0px rgba(50, 50, 50, 1);
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("fondo.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    margin: 8px -8px;
+}
 
 /*--------------------PIE DE PÁGINA--------------------*/
 .pie{
