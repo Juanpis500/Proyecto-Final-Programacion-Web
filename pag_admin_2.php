@@ -14,6 +14,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 	<header>
 		<div>
 			<nav class="carrito">
@@ -77,6 +78,54 @@
                       <td><?php print $item['Nombre_Prod']?></td>
                        <td><?php print $item['categoria_id']?></td>
                        <td class="text-center">
+=======
+    <header>
+        <div>
+           <nav class="carrito">
+               <a href="#">Login</a>
+           </nav>
+           <br><br>
+           <!-------------------- MENU -------------------->
+            <nav  class="menu">
+               <div class="contenedor">
+                <ul>
+                    <img src="images/logob.png" alt="" width="130px">
+                    <li><a href="index.php"><i class="fas fa-home"></i></a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Categorias <i class="fas fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="pag_tec.php">Tecnologia <i class="fas fa-microchip"></i></a>
+                            <a href="pag_comi.php">Comida <i class="fas fa-utensils"></i></a>
+                        </div>
+                    </div>
+                </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="sec_admin">
+        <div id="config_admin">
+            <div id="Menus_admin">
+                <ul>
+                    <li><h3>Configuracion</h3></li>
+                    <li id="opcion" style="padding:10px"><a href="pag_admin_1.php">Agregar Nuevos productos</a></li>
+                    <li id="opcion" style="padding:10px; background-color: #bfbfbf; border-radius: 5px"><a href="pag_admin_2.php">Administrar productos existentes</a></li>
+                    <li id="opcion" style="padding:10px"><a href="pag_admin_3.php">Estadisticas de la pagina</a></li>
+                </ul>
+            </div>
+            <div id="sec2_admin_2">
+                <p style="font-size: 20px">Listado de Productos:</p><hr><br>
+                <div>
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre del Producto</th>
+                            <th>Imagen del producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Descripcion</th>
+                        </tr>
+>>>>>>> 69025837791f9d536e6d4f70a85fcc69a4a57012
                         <?php
                           $Imagen = 'upload'.$item['Imagen'];
                           if(file_exists($Imagen)){

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
     <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="images/favicon.jpg">
 </head>
 <body>
     <header>
@@ -23,8 +24,15 @@
             <nav  class="menu">
                <div class="contenedor">
                 <ul>
+                    <img src="images/logob.png" alt="" width="130px">
                     <li><a href="index.php"><i class="fas fa-home"></i></a></li>
-                    <li><a href="#">Tienda</a></li>
+                        <div class="dropdown">
+                          <button class="dropbtn">Categorias <i class="fas fa-caret-down"></i></button>
+                          <div class="dropdown-content">
+                            <a href="pag_tec.php">Tecnologia <i class="fas fa-microchip"></i></a>
+                            <a href="pag_comi.php">Comida <i class="fas fa-utensils"></i></a>
+                          </div>
+                        </div>
                     <li><a href="acercade.php">Acerca de</a></li>
                     <li><a href="ayuda.php">Ayuda</a></li> 
                     <li><a href="contacto.php">Contáctanos</a></li>
@@ -33,7 +41,6 @@
             </nav>
         </div>
     </header>
-    <br><br>
     
 
         <!-------------------- CARRUSEL -------------------->
@@ -41,15 +48,15 @@
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
-                    <img src="images/carrusel1.jpg" style="width:100%">
+                    <img src="images/banner-1.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="images/carrusel2.jpg" style="width:100%">
+                    <img src="images/banner-2.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="images/carrusel3.png" style="width:100%">
+                    <img src="images/banner-3.jpg" style="width:100%">
                 </div>
 
               <!-- Next and previous buttons -->
@@ -57,19 +64,26 @@
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </nav>
-         <div class="shake-horizontal">
-             Me meneo.
-         </div>
 
     <br><br>
-    <hr>
-    <div class="suscrip">
-       <h2>Suscríbete a nuestra tienda y <br>recibe noticias de nuestros productos</h2>
-        <form action="suscripcion.php" method="post">
-                <input type="text" name="email" placeholder="Email" required><br><br>
-                <input type="submit" class="btn">
-        </form>
-    </div>
+    <section>
+       <div class="pag_prin2">
+           <h2 style="text-align: center">Categorias</h2><br>
+           <div class="Categorias_img">
+               <a href="pag_tec.php"><img src="images/Poster_Tecnologia.png" alt="" style="width: 350px"></a>
+               <a href="pag_comi.php"><img src="images/poster_comida.jpg" alt="" width="350px"></a>
+           </div>
+       </div>
+        <div class="parallax">
+            <div class="suscrip">
+               <h2>Suscríbete a nuestra tienda y <br>recibe noticias de nuestros productos</h2>
+                <form action="suscripcion.php" method="post">
+                        <input type="text" name="email" placeholder="Email" required><br><br>
+                        <input type="submit" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
     <br><br>
     <footer>
         <nav class="pie">
@@ -86,7 +100,7 @@
             
             <div>
                 <h4>Visítanos en redes sociales</h4>
-                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/ISChop-101255348559329" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram-square"></i></a>
                 <a href="#"><i class="fab fa-twitter-square"></i></a>
             </div>

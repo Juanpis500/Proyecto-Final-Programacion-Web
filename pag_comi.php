@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contáctanos</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>ISChop</title>
     <link rel="stylesheet" href="CSS/estilos.css">
     <script src="https://kit.fontawesome.com/62034752b0.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="images/favicon.jpg">
 </head>
 <body>
     <header>
         <div>
            <nav class="carrito">
                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-               <a href="#">Login</a>
+               <a href="pag_admin_1.php">Login</a>
            </nav>
            <br><br>
            
@@ -25,8 +29,8 @@
                         <div class="dropdown">
                           <button class="dropbtn">Categorias <i class="fas fa-caret-down"></i></button>
                           <div class="dropdown-content">
-                            <a href="pag_tec.php">Tecnologia <i class="fas fa-microchip"></i></a>
-                            <a href="pag_comi.php">Comida <i class="fas fa-utensils"></i></a>
+                            <a href="#">Tecnologia <i class="fas fa-microchip"></i></a>
+                            <a href="#">Comida <i class="fas fa-utensils"></i></a>
                           </div>
                         </div>
                     <li><a href="acercade.php">Acerca de</a></li>
@@ -37,38 +41,14 @@
             </nav>
         </div>
     </header>
-    
-    <nav id="navcont">
-        <h1 style="text-align:center; font-size:35px;">Contáctanos</h1>
-        <nav style=display:flex;>
-            <div class="cont">
-                <img src="images/contacto.png" alt="Contacto" width="350px">
-            </div>
-            <div class="cont">
-                <form action="correo.php" method="post">
-                    <input type="text" name="nombre" placeholder="Nombre completo" required><br><br>
-                    <input type="text" name="email" placeholder="Email" required><br><br>
-                    <input type="password" name="secret" placeholder="Password" required><br><br>
-                    <input type="text" name="asunto" placeholder="Asunto"><br><br>
-                    <textarea name="mensaje" id="mensaje" cols="46" rows="7" style="font-family: 'Quicksand', sans-serif; font-size:13px;" placeholder="Mensaje"></textarea><br>
-                    <input type="submit" class="btn">
-                </form>
-                
-            </div>
-            <div class="cont">
-                <h1 style="font-size:25px;">O contáctanos por teléfono</h1>
-                <p>Llámanos al número 475 953 1506 <br><br>Nuestro horario de atención es: <br>Lunes a viernes de 9:00 a 16:00</p>
-            </div>
-        </nav>
-    </nav>
-    
-    
-    
+    <section>
+        
+    </section>
     <footer>
         <nav class="pie">
             <div>
                 <h4>Acerca de ISChop</h4>
-                <a href="acercade.php">¿Quiénes somos?</a>
+                <a href="#">¿Quiénes somos?</a>
             </div>
             
             <div>
@@ -89,5 +69,7 @@
             <p>Todos los derechos resevados <i class="far fa-copyright"></i> 2020 ISChop utiliza cookies para almacenar los datos de la cuenta.</p>
         </div>
     </footer>
+    
+    <script src="JavaScript/codigo.js"></script>
 </body>
 </html>
