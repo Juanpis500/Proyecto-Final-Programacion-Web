@@ -39,12 +39,12 @@
             </div>
             <div class="cont">
                 <form action="correo.php" method="post">
-                    <input type="text" name="nombre" placeholder="Nombre completo" required><br>
-                    <input type="text" name="email" placeholder="Email" required><br>
-                    <input type="password" name="secret" placeholder="Password" required><br>
-                    <input type="text" name="asunto" placeholder="Asunto"><br>
+                    <input type="text" name="nombre" placeholder="Nombre completo" required><br><br>
+                    <input type="text" name="email" placeholder="Email" required><br><br>
+                    <input type="password" name="secret" placeholder="Password" required><br><br>
+                    <input type="text" name="asunto" placeholder="Asunto"><br><br>
                     <textarea name="mensaje" id="mensaje" cols="46" rows="7" style="font-family: 'Quicksand', sans-serif; font-size:13px;" placeholder="Mensaje"></textarea><br>
-                    <input type="submit">
+                    <input type="submit" class="btn">
                 </form>
                 
             </div>
@@ -72,7 +72,7 @@
             
             <div>
                 <h4>Visítanos en redes sociales</h4>
-                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/ISChop-101255348559329" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram-square"></i></a>
                 <a href="#"><i class="fab fa-twitter-square"></i></a>
             </div>

@@ -23,7 +23,7 @@
                     <li><a href="index.php"><i class="fas fa-home"></i></a></li>
                     <li><a href="#">Tienda</a></li>
                     <li><a href="acercade.php">Acerca de</a></li>
-                    <li><a href="ayuda.php">Ayuda</a></li> 
+                    <li><a href="ayuda.php">Ayuda</a></li>
                     <li><a href="contacto.php">Contáctanos</a></li>
                 </ul>
                 </div>
@@ -31,7 +31,26 @@
         </div>
     </header>
     
-
+    
+    <!-------------------- VENTANA EMERGENTE PARA CÓDIGO DE DESCUENTO -------------------->
+       <p style="margin-left: 80%;
+      transform: translateX(-80%);">Obtén un código de descuento por tiempo limitado</p>
+        <p style="margin-left: 80%;
+      transform: translateX(-80%);"><a href="#popup" class="btn">Click aquí</a></p>
+        <div id="popup" class="overlay">
+            <div id="popupBody">
+                <div class="popupContent">
+                    <img src="images/DescuentoXMAS.png" alt="" width="360px;" style="margin-left: 50%;
+      transform: translateX(-50%);">
+                    <br><br>
+                    <button id="cerrar" class="btnpop"><a href="#">Cerrar</a></button>
+                </div>
+            </div>
+        </div>
+    <hr>
+    
+    
+<br><br>
         <div class="vis-mis">
             <div>
                 <h1>Misión</h1>
@@ -54,17 +73,22 @@
         <br><br>
         <hr>
         
+        
+        
+        
+        
         <div class="vis-mis">
             <div>
-               <br><br>
+                <h1>Objetivo</h1>
                 <p>Incursionar en las ventas on-line con un margen de éxito sostenible.</p>
             </div>
             <div>
                 <img src="images/objetivos.png" alt="Objetivos" width="350px">
             </div>
         </div>
- 
+   
     
+    <br><br>
     <footer>
         <nav class="pie">
             <div>
@@ -80,7 +104,7 @@
             
             <div>
                 <h4>Visítanos en redes sociales</h4>
-                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/ISChop-101255348559329" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram-square"></i></a>
                 <a href="#"><i class="fab fa-twitter-square"></i></a>
             </div>

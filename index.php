@@ -68,7 +68,15 @@
          </div>
 
     <br><br>
-    
+    <hr>
+    <div class="suscrip">
+       <h2>Suscríbete a nuestra tienda y <br>recibe noticias de nuestros productos</h2>
+        <form action="suscripcion.php" method="post">
+                <input type="text" name="email" placeholder="Email" required><br><br>
+                <input type="submit" class="btn">
+        </form>
+    </div>
+    <br><br>
     <footer>
         <nav class="pie">
             <div>
@@ -84,7 +92,7 @@
             
             <div>
                 <h4>Visítanos en redes sociales</h4>
-                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/ISChop-101255348559329" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram-square"></i></a>
                 <a href="#"><i class="fab fa-twitter-square"></i></a>
             </div>

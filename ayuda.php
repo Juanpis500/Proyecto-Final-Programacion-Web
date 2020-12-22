@@ -80,11 +80,8 @@
         <nav class="pie">
             <div>
                 <h4>Acerca de ISChop</h4>
-<<<<<<< HEAD
                 <a href="acercade.php">¿Quiénes somos?</a>
-=======
                 <a href="#">¿Quiénes somos?</a>
->>>>>>> ce85fdd255672456b035c711abca759617a96389
             </div>
             
             <div>
@@ -95,7 +92,7 @@
             
             <div>
                 <h4>Visítanos en redes sociales</h4>
-                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/ISChop-101255348559329" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram-square"></i></a>
                 <a href="#"><i class="fab fa-twitter-square"></i></a>
             </div>
