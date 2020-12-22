@@ -23,7 +23,13 @@
                <div class="contenedor">
                 <ul>
                     <li><a href="index.php"><i class="fas fa-home"></i></a></li>
-                    <li><a href="#">Tienda</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Categorias <i class="fas fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="#">Tecnologia <i class="fas fa-microchip"></i></a>
+                            <a href="#">Comida <i class="fas fa-utensils"></i></a>
+                        </div>
+                    </div>
                 </ul>
                 </div>
             </nav>
